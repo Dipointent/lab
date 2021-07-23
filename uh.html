@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Animations</title>
+        <style>
+            td, table{
+                padding: 10px;
+                border: 1px solid black;
+                border-collapse: collapse;
+                
+            }
+            
+            
+            #header{
+                text-align: center;
+                position: relative;
+                animation-duration: 2s;
+                animation-name: header;
+                
+            }
+            @keyframes header{
+                0%{left: 0px; top:-500px;}
+                100%{left: 0px; top: 0px;}
+            
+            }
+            #text{
+                text-align: center;
+                position: relative;
+                animation-duration: 2s;
+                animation-name:text;
+            }
+            @keyframes text{
+                0%{left:-500px; top:0px;}
+                100%{left:0px; top:0px;}
+            }
+            #table{
+                position: relative;
+                animation-name:table;
+                opacity: 0%;
+            }
+            #table:hover{
+                opacity:1%;
+            }
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header"><h1>Turtles are fun</h1></div>
+        <div id="text"><p>They are fun because they swim in the water,
+            and swimming in the water is surprisingly
+            fun to watch.
+        </p></div>
+        <div id="table"><table>
+            <tr>
+                <td>Turtles</td>
+                <td>turtles</td>
+            </tr>
+            <tr>
+                <td>turtles</td>
+                <td>turtles</td>
+            </tr>
+        </table></div>
+        
+
+    </body>
+</html>
